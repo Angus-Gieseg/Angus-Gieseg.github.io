@@ -1,0 +1,190 @@
+.center {
+  display: block;
+  padding-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vmax;
+}
+@media only screen and (min-width: 700px) {
+  .text-padding {
+    padding-right: 65vw;
+}
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+  .hide-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tablet-view {
+    ;
+  }
+}
+
+
+#title-border{
+  border-radius: 20em;
+  border-color: rgb(37, 37, 35);
+  font-size: 2.5vw;
+}
+
+.fixed-top{
+  position: fixed;
+  padding-bottom: 20px;
+  top: 0px
+}
+
+
+body{
+  background: rgb(255, 255, 255);
+  padding-top: 10vmin;
+  
+  font-family: "Inter", serif;
+  top: 0px; 
+}
+
+.vector{
+  background-position: 50% 50%;
+
+  max-width: 100vm;
+}
+
+.title{
+  color: rgb(10, 0, 26);
+  position: center;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.button{
+  border-radius: 10vh;
+  border-width: 10vh;
+  position: center;
+
+}
+
+
+
+.navbar {
+  box-shadow: 3px 3px 2px #ffe2e2;
+  opacity: 1;
+  background: rgb(79, 120, 255);
+  min-width: 100%;
+  color: antiquewhite;
+}
+
+.nav-item {
+  padding-top: 1.4vh;
+  font-size: 1.4rem;
+}
+
+
+/* Button Carrosel */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  position:static;
+
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 28vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+
+.gallery{
+  display: block;
+  margin-left: 36vw;
+  margin-right: 36vw;
+}
+
+
+/* Design of contact form */
+/* Reference - https://www.w3schools.com/css/tryit.asp?filename=trycss_form_responsive */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #044faa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #044faa;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
