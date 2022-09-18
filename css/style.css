@@ -1,190 +1,321 @@
-.center {
-  display: block;
-  padding-top: 2vw;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20vmax;
-}
-@media only screen and (min-width: 700px) {
-  .text-padding {
-    padding-right: 65vw;
-}
-}
-
-
-
-
-@media only screen and (max-width: 320px) {
-  .hide-img {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .tablet-view {
-    ;
-  }
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+article,
+footer,
+header,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 
-#title-border{
-  border-radius: 20em;
-  border-color: rgb(37, 37, 35);
-  font-size: 2.5vw;
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inter;
+  vertical-align: baseline;
 }
 
-.fixed-top{
-  position: fixed;
-  padding-bottom: 20px;
-  top: 0px
-}
-
-
-body{
-  background: rgb(255, 255, 255);
-  padding-top: 10vmin;
-  
-  font-family: "Inter", serif;
-  top: 0px; 
-}
-
-.vector{
-  background-position: 50% 50%;
-
-  max-width: 100vm;
-}
-
-.title{
-  color: rgb(10, 0, 26);
-  position: center;
-  text-align: center;
-  font-size: 2vw;
-}
-
-.button{
-  border-radius: 10vh;
-  border-width: 10vh;
-  position: center;
-
-}
-
-
-
-.navbar {
-  box-shadow: 3px 3px 2px #ffe2e2;
-  opacity: 1;
-  background: rgb(79, 120, 255);
-  min-width: 100%;
-  color: antiquewhite;
-}
-
-.nav-item {
-  padding-top: 1.4vh;
-  font-size: 1.4rem;
-}
-
-
-/* Button Carrosel */
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  position:static;
-
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
+.profile {
   height: auto;
+  border-radius: 1.5em;
+  width: 2em;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+/* HTML5 display-role reset for older browsers */
 
-.footer{
-  text-align: center;
-  margin-top: 28vh;
-  margin-left: 30vw;
-  margin-right: 30vw;
-}
-
-.gallery{
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
-  margin-left: 36vw;
-  margin-right: 36vw;
 }
 
+body {
+  line-height: 1;
+}
 
-/* Design of contact form */
-/* Reference - https://www.w3schools.com/css/tryit.asp?filename=trycss_form_responsive */
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -----------------------------------------------------------------------*/
+/* This is a start of the new CSS code */
+
+header {
+  line-height: 1.5;
+  background-color: #2c1564;
+  color: white;
+  padding: 3.125em;
+}
+
+/* Boilerplate */
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+body {
+  font-family: "Open Sans";
+  line-height: 1.5;
+  margin: 0 auto;
+  color: rgb(72, 0, 0);
+  background-color: #e2e8e4;
+  border-width: 10px;
+  border-top: none;
+  border-bottom: none;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+a {
+  color: #456bd9;
+  font-size: 16px;
 }
 
-input[type=submit] {
-  background-color: #044faa;
+.linkedin,
+.github {
+  font-size: 3.5vw;
+  margin: 0 -20em 0em 20.5em;
+  text-decoration: none;
+  position: relative;
+  bottom: 3.85em;
+}
+
+/*This is the start of the <div> and <span> based code
+----------------------------------------------------------------------------*/
+
+/* This is an important part of the code. Attribute "title is also used in other
+cases so take care if deleting the .title from here */
+
+.title {
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
 }
 
-input[type=submit]:hover {
-  background-color: #044faa;
+/* This deals with the main menu */
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  margin-top: 3em;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.menu li {
+  display: inline;
+  padding: 2em;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+.menu a:hover {
+  color: #0099cc;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* This deals with the main part of the front-page */
+
+/* Boilerplate */
+
+.sidebar-item {
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-left: 5em;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
+.sidebar-item-header {
+  background: #3f290f;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sidebar-item-menu {
+  list-style: none;
+  padding: 0;
+  background-color: #dbe5ea;
+}
+
+.sidebar-item-menu > * + * {
+  border-top: 2px solid transparent;
+}
+
+.sidebar-item-menu a {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  line-height: 1;
+  padding: 1rem;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5em;
+  margin: 1.5em auto;
+  max-width: 85em;
+  padding: 0 1.5em;
+}
+
+/**
+ * Sidebar inherits grid display styles and gap size. This will be simpler once `display: subgrid` is supported!
+ */
+
+.sidebar {
+  display: inherit;
+  grid-gap: inherit;
+}
+
+/**
+ * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
+ */
+
+@media only screen and (max-width: 37.5em) {
+  .title {
+    font-size: 3em;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-item {
+    margin-left: 0;
+  }
+
+  .menu li {
+    display: inline;
+    padding: 1.7em;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+
+  .fa.fa-linkedin,
+  .fa.fa-github {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 -2.8em 0em 3.3em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.3em;
   }
 }
+
+/**
+ * At even wider sizes…
+ */
+
+@media only screen and (min-width: 37.5em) {
+  /**
+   * Establish one primary (⅔) column and one secondary (⅓) column.
+   */
+
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /**
+   * Automatically create sidebar rows that are as short as their content will allow.
+   * Make this element span two rows, allowing text elements to flow to its left.
+   */
+
+  .sidebar {
+    grid-auto-rows: min-content;
+    grid-row: span 2;
+  }
+}
+
+/* This part deals with the 2-column grid */
+
+.grid-item {
+  text-align: left;
+  display: block;
+}
+
+.grid-item h1 {
+  font-weight: bold;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: black;
+}
+
+article img {
+  max-width: 100%;
+}
+
+.grid article p {
+  margin-top: 1em;
+  line-height: 1.5;
+  font-family: "Helvetica-Light";
+  font-size: 20px;
+}
+
+/* This part is for the footer */
+
+footer {
+  background-color: #0f1c3f;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1.2em;
+  text-transform: uppercase;
+}
+
+/* This is the end of the style.css file */
