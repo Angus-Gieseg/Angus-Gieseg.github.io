@@ -305,6 +305,14 @@ cases so take care if deleting the .title from here */
   margin-top: 1.5em;
 }
 
+.post-title-long {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 1.5em;
+}
+
+
 article img {
   max-width: 100%;
 }
