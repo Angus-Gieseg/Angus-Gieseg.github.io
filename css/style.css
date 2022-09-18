@@ -140,6 +140,8 @@ cases so take care if deleting the .title from here */
 
 .figure {
   max-width: 80%;
+  border-radius: 5%;
+  border: 2px solid #2c1564;
   
 }
 

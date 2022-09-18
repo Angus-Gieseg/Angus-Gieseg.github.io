@@ -12,10 +12,7 @@
   <body>
     <header>
       <div class = "title">
-        <img  src="../img/ME.jpg" class="profile"></img>
         <h4> CSS and HTML Basics </h4></div>
-
-      
       <nav class="menu">
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -33,14 +30,13 @@
       
       
         <h1 class="post-title">Margins, Border, and Padding</h1>
-        <img src="../img/MarginBorderPadding.png"></img>
+        <img src="../img/MarginBorderPadding.png" class = "figure"></img>
         <p>
           Spacing is difficult and one of the hardest aspects of front end web-design. Firstly the basics, 
           margins, borders and Padding. We'll start from the center out. The padding is the spacing between the
           content and border as seen in the image above and is an additional clickable area. The Border is the 
           outline of the content + padding and can be customized and styled. The Margins are the final component
           which are responsible for spacing the element in regards to other elements. 
-          
         </p>
         
 
@@ -53,20 +49,36 @@
           Javascript assigning functions to HTML elements.
         </p>
         <div>      
-          <h1 class="post-title">Best Practice for Classes and ID's</h1>
-          <p>
-            ID's should be used sparingly, while classes can be used heavily. Classes adapt all elements with a specific
-            class whereas ID can only apply to one specific element. ID's additionally override classes if their styling 
-            clashes. 
-            <ul>
-              <li><b>Universal selector</b> selects all elements </li>
-              <li><b>Type selectors</b> targets element(s) by HTML tag (includes pseudo elements) </li>
-              <li><b>Class selector</b> Attribute selector -targets element(s) by class or attribute, respectively (includes pseudo classes) .profile{CSS declaration }
-              </li>
-              <li><b>ID selector</b> targets an element by id using #titles {Css declaration}</li>
-            </ul>
-
-          </p>
+        <h1 class="post-title">Best Practice for Classes and ID's</h1>
+        <p>
+          ID's should be used sparingly, while classes can be used heavily. Classes adapt all elements with a specific
+          class whereas ID can only apply to one specific element. ID's additionally override classes if their styling 
+          clashes. 
+          <ul>
+            <li><b>Universal selector</b> selects all elements </li>
+            <li><b>Type selectors</b> targets element(s) by HTML tag (includes pseudo elements) </li>
+            <li><b>Class selector</b> Attribute selector -targets element(s) by class or attribute, respectively (includes pseudo classes) .profile{CSS declaration }              </li>
+            <li><b>ID selector</b> targets an element by id using #titles {Css declaration}</li>
+          </ul>
+        </p>
+        <h1 class="post-title">Positioning - Difference between relative, absolute & fixed</h1>
+        <img src="../img/Positioning.jpeg" class = "figure"></img>
+        <p>
+          Once objects are sorted into boxes they they can be positions using static, relative, fixed or absolute.
+          There are other variables for position: variable, such as sticky, but we'll only touch on these two. static
+          position fixes the position inplace within the other elenents on the screen. Fixed elements will stay in the same
+          position wherever you move your viewport across the page. The Relative too is used in conjunction with absolute.
+          Absolute positions are aligned relative to the object that are labelled relative. 
+          I found difficulty using relative and absolute positioning and takes practice and planning.         
+        </p>
+        <h1 class="post-title">Inline, Block, vs Block-inline</h1>
+        <img src="../img/mGTYI.png" class = "figure"></img>
+        <p>
+          Once you've planned out the position of containers then how will you elements fit within it?
+          The default for each container p, input, div etc are all different. Inline will place elements inline, 
+          block will place them stacked vertically and inline-block will place them horizontally as blocks.
+          Buttons for example are block level elements, and will need an block-inline to ensure they align correctly.   
+        </p>
         </div>
       </article>
 
@@ -75,11 +87,11 @@
         <div class="sidebar-item">
           <h2 class="sidebar-item-header">DevAcademy Content</h2>
           <ul class="sidebar-item-menu">
-            <li><a href="blog/CSS-HTML-basics.html" target="_blank">CSS HTML basics</a></li>
-            <li><a href="blog/Identity-Values-and-Strengths.html" target="_blank">Identity-Values-and-Strengths</a></li>
-            <li><a href="blog/Js-Fundamentals.html" target="_blank">Js-Fundamentals</a></li>
-            <li><a href="blog/Learning-Plan.html" target="_blank">Learning-Plan</a></li>
-            <li><a href="blog/te-houtaewa-template.html" target="_blank">te-houtaewa-template</a></li>
+            <li><a href="../blog/CSS-HTML-basics.html" target="_blank">CSS HTML basics</a></li>
+            <li><a href="../blog/Identity-Values-and-Strengths.html" target="_blank">Identity-Values-and-Strengths</a></li>
+            <li><a href="../blog/Js-Fundamentals.html" target="_blank">Js-Fundamentals</a></li>
+            <li><a href="../blog/Learning-Plan.html" target="_blank">Learning-Plan</a></li>
+            <li><a href="../blog/te-houtaewa-template.html" target="_blank">te-houtaewa-template</a></li>
           </ul>
         </div>
         
@@ -88,85 +100,3 @@
     
   </body>
 </html>
-
-
-
-
-
-
-
-
-<!-- 
-<body>
-  <nav id = "title-border" class="navbar fixed-top title " >
-    <h1>  CSS and HTML Design Basics </h1>
-    <a href="../index.html" class="homepage"> Homepage </a>
-  </nav>
-  <h1 class = "spacing"> "Coding is like speaking a language"</h1>
-  <p> Coding is like speaking a language, there a few words that are 
-    commonly used, but to the novice coder like myself there is an 
-    overwhelming number to learn. There are a few concepts to understand 
-    to make life easier which I'll discuss through out the blog. Initially
-    I'll be using words in ways I don't intend and run myself into all sorts
-    of trouble. But I guess that's the joy of it!
-  </p>
-  <p class="reference">
-    Firstly
-    this blog is a referenced summary of the blog by 
-    Tania Rascia - Complete Guide to CSS Concepts and Fundamentals
-    <br>
-    <a class="reference" href= "https://www.taniarascia.com/overview-of-css-concepts/"> 
-      Link to website
-    </a>
-  </p>
-  <h2>
-    The HTML Fundamentals
-  </h2>
-  <ul>
-    <li>Tag – element name (example &lt;a&gt;Tania's WebRing&lt;/a&gt;) </li>
-    <li>Attribute (href="Link or path to content – Also known as value”) </li>
-    <li>Value (http:// or css/img/smiley.jpeg) </li>
-    <li>Element (Hello World)</li>
-    <h3>Putting it all together</h3>
-    &lt;a&gt;href = " css/img/smiley.jpeg”&gt; Smiley face &lt;/a&gt;
-
-  </ul>
-
-  <h2>
-    CSS Fundamentals
-  </h2>
-  <ul>
-    <li>Selectors – Elements being selected </li>
-    <li>Properties – the aspect of the element being styled</li>
-    <li>Values – the style being applied</li>
-    <li>Element (Hello World)</li>
-    <h3>example</h3>
-    h1{
-      color: blue;
-    }
-    In the above example the color off all h1 elements will be blue
-  </ul>
-
-  <h2>
-    Types of CSS Selectors
-  </h2>
-  <ul>
-    <li><b>Universal selector</b> - selects all elements </li>
-    <li><b>Type selectors</b> - targets element(s) by HTML tag (includes pseudo elements) </li>
-    <li><b>Class selector</b> - Attribute selector -targets element(s) by class or attribute, respectively (includes pseudo classes) 
-    </li>
-    <li><b>ID selector</b> - targets an element by id</li>
-  </ul>
-  <h3>Code examples</h3>
-  <img href = "img/Selectors.png" src="img/Selectors.png" alt="Selector img" height= 500vm>
-    <a href="img/Selectors.png"> Selector examples</a>
-  </img>
-
-  
-
-
-
-</body>
-
-
-</html> -->
