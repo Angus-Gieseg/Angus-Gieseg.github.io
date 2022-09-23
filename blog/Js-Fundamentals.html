@@ -3,6 +3,12 @@
   <head>
     <link rel="stylesheet" href="../css/style.css">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Inter">
+    <!-- Highlight js Package for example code -->
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -26,15 +32,21 @@
     <main>
       <div class = "grid">
       <article class = "grid-item">
-        <h1 class="post-title-long">An Anology to describe the relationship between HTML and Javascript </h1>
+        <h1 class="post-title-long">Introduction</h1>
         
         <p>
           Websites previously were built statically without Javascript, what you saw is what you got. Content can now
-          change on the page, showing new content, or tracking changes and interactions behind the scenes. HTML is the
-          a very blunt person give you all the information all at once. Javascript on the other hand gives you what you
-          need at the time, and can lead you on a streamlined journey to complete the taks you setout to complete.
+          change on the page, showing new content, or tracking changes and interactions behind the scenes.
         </p>
         
+        <h1 class="post-title-long">Analogy for Javascript</h1>
+        
+        <p>
+          Imagine you have a square dull block of clay representing the HTML, and throughout the clay is a mixture of 
+          colors and shapes. The Javascript is the spinning disk and the sculter, working to shape the clay and all its 
+          colors into its intended purpose. The shape of the clay could change infinitly or finitely depending on the 
+          rules the sculter has been given.
+        </p>
 
         <h1 class="post-title-long">Explain control flow and loops</h1>
         <p>
@@ -45,23 +57,63 @@
           size. The number of iterations therefore is range divided by step size.
           
         </p>
-        <div>   
 
+        <div>   
         <h1 class="post-title-long">Accessing data from arrays and objects</h1>
         <p>
           Arrays are simply lists of information that can be indexed with number [0] would be the first value, [0][2] would be the first row second column.
           An object is similar to a dictionary in python, it is a collection of keys(or parameters) with values within them. See below for examples of arrays. 
           The notation for arrays are square brackets [], and objects are donated by curly brackets {}. You can put arrays inside of objects but not the other
           way around.
-          <img src="../img/Arrays vs objects.png" class="figure"></img>
+          
+
+          <pre><code class = "language-html">
+            // Example of an object
+            const altered-carbon = {
+              // below are keys: value --> example media-type: 'movie'
+              media-type: 'Movie'
+              genre: 'Sci-fy'
+              seasons: '2'
+              next-season: 'cancelled'
+              best-Sci-fy: 'Absolutely'
+            }
+
+            // to access a object you could use the follow code below
+            // altered-carbon.media-type = 'Movie'
+            // or
+            // altered-carbon['media-type'] = 'Movie'
+
+            // Example of a list
+            let best-TV-series = ['Altered Carbon', 'Game Of Thrones', 
+            'Breaking Bad', 'Sherlock Holmes', 'West World']
+
+            // to access the list 
+            // best-TV-series[0] = 'Altered Carbon'
+          </code></pre>
         </p>
 
         <h1 class="post-title-long"> Functions </h1>
         <p>
           Functions at their most basic, is a procedure which takes a set of inputs and produces and output. Outputs could be a value calculated, 
           task performed regarding display, tracking or request. The inputs could be an object, array or anything that can be executed upon. Below is an example
-          of a function.
+          of a function. Function are useful of regular lines of code because they can be called and run an infinite amount of times, and even more useful is when you
+          link them to an event or interaction a user has with the site. Analogy for a function could cooking your favourite meal, you can cook than meal
+          as many times as you like, and follow a list of steps to procude a final outcome, YOUR MEAL!
           <img src="../img/JSfunction.png" class="figure"></img>
+        </p>
+
+        <h1 class="post-title-long"> Describe the DOM </h1>
+        <p>
+          The DOM(Document object Model) is a useful tool in Javascript which outlines an entire stucture of a document,
+          which in our case is the webpage of the HTML document. The DOM allows you to traverse anywhere along the tree to access
+          and alter any part of the webpage. This is pretty powerful stuff. We can use the DOM to select all the object given their
+          attributes, ID's and more. 
+          <pre><code class = "language-html">
+            // The document.getElementById will search through the entire document to look for an ID with
+            // 'button' and then the .innerHTML will edit the context of the HTML to 'Click Here' and replace everything
+            // inside it.
+            document.getElementById("button").innerHTML = 'Click Here'
+          </code></pre>
         </p>
         </div>
       </article>
