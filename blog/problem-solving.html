@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Highlight js Package for example code -->
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Inter">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem Solving</title>
+  </head>
+
+  <body>
+    <header>
+      <div class = "title">
+        <h4>Problem Solving</h4></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+        
+      </nav>
+    </header>
+
+
+
+    <main>
+      <div class = "grid">
+      <article class = "grid-item">
+        <h1 class="post-title-long"> What are strong problem solving habits?</h1>
+        
+        <p>
+          Firstly, what is problem solving? Problem solving is the the process of finding a solution to a complex problem. For some
+          people this is throwing a handfull of darts at a board... blindfolded... until one lands a comfortable distance from the 
+          bulls eye. It's often too large of a time investment to get a perfect bulls eye and in many cases its not economical or time
+          efficient to solve the problem perfectly. For example you could spent hours rewritting your code to make it a 1/100 seconds faster,
+          or add a feature which serves only 1% of your users needs so overall you've recieved a negligible improvement. What I'm going to discuss
+          how to indetify a process to discover the best habits & mindset to solve a complex problem. 
+        </p>
+          
+        <p>
+          I'm going to use examples where I've become stuck and how I've overcome the challenge. The most important thing is to not get bogged down
+          in the problem and feel like your inadequate and unable to progress. The number one take away should actually be to go and do your own
+          research on the growth mindset and realise, that if you feel like your progressing slowly or fail to achieve a desired outcome, 
+          you haven't failed, you're just not there yet.
+        </p>
+        
+        
+        <h1 class="post-title-long">Sometimes its the simple things..</h1>
+        <p>
+          Have you ever faced a problem that you poured hours of time into, only to find the problem to be quite simple?
+          I have many times. The most common mistakes are spelling errors, and syntaxing(formatting of code) incorrectly. 
+          Can you spot the two errors between the two examples of code where say the array1 = [1,2]?
+        </p>
+
+        <pre><code class = "language-html">
+          for (i = 0; i < array1.length; i++ {
+            consol.log("Hello World")
+          }
+
+          VS
+
+          for (i = 0; i < array1.length; i++) {
+            console.log("Hello World")
+          }
+        </code></pre>
+
+        <p>
+          From the example the simple problem was that console.log was spelt incorrectly and the for loop end bracket was missing.
+        </p>
+
+
+          
+        <h1 class="post-title-long">A problem I faced recently?</h1>
+        <p>
+          Recently I was using a .find method to identify which object contained the string "Scooby". The arrayOfObjects can be see below. 
+        </p>
+        <pre><code class = "language-html">
+          arrayOfObjects = [{ doorNumber: 1, hiding: 'Shaggy'},
+                            { doorNumber: 2, hiding: 'Scooby'}
+                            { doorNumber: 3, hiding: 'The Monster!'}]
+
+          - WRONG CODE BELOW -
+          function whereaAreYou(arrayOfObjects){
+            return arrayOfObjects.find(scoobs) => scoobs.name === "Scooby"
+          }
+
+          - CORRECT CODE BELOW - 
+          function whereaAreYou(arrayOfObjects){
+            return arrayOfObjects.find(scoobs) => scoobs.hiding === "Scooby"
+          }
+        </code></pre>
+        <p>
+          The issue I had was that I had found some example code to use .find method, and I thought, great! That's exactly the same use case
+          and then... nothing, it didn't work. So I tried re-writting the arrow function as a regular fuction and still it didn't work. So, 
+          I read the MDN documentation, we'll I skimned through to no avail. Finally I had to reachout for help, and the solution was painfully simple.
+          The .find method used dot notation to identify the key to search through. I used ".name" when I needed ".hiding" which was giving me the error.
+          Throughout the process I was incredibly frustrated and couldn't seem to make it work, something I felt was telling me I had been lazy in the way 
+          I went about solving the problem and wasn't being diligent in my problem solving. 
+        </p>
+        <p>
+          Through experience I identified where I went wrong. I rushed through and wan't diligent reading through example. When I'm faced with code I should
+          not simply paste it in a alter it as I need, I should write out the code line by line and make sure I understand each function.
+        </p>
+
+        <h1 class="post-title">Problem Solving Techniques</h1>
+        <p>
+          In this section I'll be discussing and reflecting on different problem solving techniques.
+        </p>
+
+        <h1 class="post-title-long">Pseudocode</h1>
+        <p>
+          Pseudcoding is my favourite way to code for two reasons, It's fast and a good habit to help others reviewing my code. 
+          Pseudcoding embodies the quote "How do you eat an elephant, one bite at a time" - My old manager. Pseudocoding is the process of adding 
+          comments at the top of functions to layout all the tasks that need to be achieved for the required procedure to pass. 
+        </p>
+
+        <h1 class="post-title-long">Rubber Ducky</h1>
+        <p>
+          The Rubber Ducky technique is the process of solving a problem through talking about it with a peer or to yourself. Sometimes putting your problem
+          into words makes it easier to solve. I find it having varying success and most useful to identify gaps in my knowledge "If you can't explain something
+          simply you don't understand it" -Albert Einstein.
+        </p>
+
+        <h1 class="post-title-long">Reading error messages</h1>
+        <p>
+          Thankfully the error messages help solve the most common mistakes such as incorrect syntaxing or using array functions for objects and vice versus.
+          As I'm progressing I'm slowlying becoming more confident at reading error messages and recently discovered you can search on the web for the error and
+          that often helps to solve the problem.
+        </p>
+
+        <h1 class="post-title-long">Console.logging</h1>
+        <p>
+          Console Logging is the technique I frequently use to check the input of functions and see how it is being passed through at each stage. 
+        </p>
+
+        <h1 class="post-title-long">Console.logging</h1>
+        <p>
+          Googling, is usually the first step of problem solving, checking I understand how a function works and how others have used it to complete a similar task.
+        </p>
+
+        <h1 class="post-title-long">Asking others</h1>
+        <p>
+          Asking others works two fold, writting out the problem to others ties into rubber ducky technique and sometimes I solve it before I send the message through
+          writting it out. Asking for help is a final resort as I believe the greatest learning is through struggling with something.
+        </p>
+
+        <h1 class="post-title-long">Improving the process to make one cohessive strategy </h1>
+        <p>
+          I believe the best process for me would be as follows;
+          <ul>
+            <ol>1. Pseudcoding to avoid making future errors and breaking down the problem</ol>
+            <ol>2. Consolelogging at each stage to review the program is passing through</ol>
+            <ol>3. Reading error messages</ol>
+            <ol>4. Reviewing examples and documentation online around the task and error message</ol>
+            <ol>5. Rubber ducky method with myself or peer</ol>
+            <ol>5. Asking for help from supervisor</ol>
+          </ul>
+        </p>
+
+        
+        
+      </article>
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <h2 class="sidebar-item-header">DevAcademy Content</h2>
+          <ul class="sidebar-item-menu">
+            <li><a href="../blog/CSS-HTML-basics.html" target="_blank">CSS HTML basics</a></li>
+            <li><a href="../blog/Identity-Values-and-Strengths.html" target="_blank">Identity-Values-and-Strengths</a></li>
+            <li><a href="../blog/Js-Fundamentals.html" target="_blank">Js-Fundamentals</a></li>
+            <li><a href="../blog/Learning-Plan.html" target="_blank">Learning-Plan</a></li>
+            <li><a href="../blog/emotional-intelligence.html" target="_blank">Importance of Emotional Intelligence</a></li>
+            <li><a href="../blog/neuroplasticity.html" target="_blank">Neuroplasticity</a></li>
+            <li><a href="../blog/te-houtaewa-template.html" target="_blank">te-houtaewa-template</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </main>
+    
+  </body>
+</html>
